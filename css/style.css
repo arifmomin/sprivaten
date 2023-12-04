@@ -1,0 +1,707 @@
+/* ==================== text link part start=================== */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* ------------------ text link part end-------------------- */
+/* ====================common css part start=================== */
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.container{
+    width: 1050px;
+    margin: 0 auto;    
+}
+/* ------------------common css part end-------------------- */
+/* ====================menu part start=================== */
+
+#menu_bar{
+    width: 100%;
+    height: 104px;
+    position: absolute;
+    
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+    line-height: 104px;
+}
+.menu_col ul{
+    display: flex;
+    gap: 21px;
+}
+
+.menu_col h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+}
+.menu_col ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    transition: all linear .3s;
+    overflow: hidden;
+    position: relative;
+}
+.menu_col ul li a:hover{
+    color: #4d07ff;
+}
+.menu_col ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #111;
+    top: 65%;
+    left: 100%;
+    transition: all linear .4s;
+}
+.menu_col ul li a:hover::after{
+   left: 0%;
+}
+/* ------------------menu part end-------------------- */
+/* ====================banner part start=================== */
+#banner{
+    background: url('../image/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.banner_row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.banner_col h1{
+    width: 400px;
+    font-size: 52px;
+    font-weight: 700;
+font-family: "Helvetica Neue";
+    
+    color: #111;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.banner_col p{
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    margin-bottom: 35px;
+}
+.banner_button{
+    display: flex;
+    gap: 10px;
+}
+.banner_button .banner_one{
+    width: 187px;
+    height: 48px;
+    background: #00A0C1;
+    border-radius: 37px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid #00A0C1;
+    transition: all linear .3s;
+}
+.banner_button .banner_one:hover{
+    background: transparent;
+    color: #111;
+}
+.banner_button .banner_two{
+    width: 157px;
+    height: 48px;
+    background: #00A0C1;
+    border-radius: 37px;
+    border: 1px solid #00A0C1;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    transition: all linear .3s;
+    
+}
+.banner_button .banner_two:hover{
+    background: transparent;
+    color: #111;
+}
+.banner_form{
+    width: 330px;
+    padding: 40px 42px;
+    background: #fff;
+  
+}
+.form_heading h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    margin-bottom: 40px;
+}
+.banner_form_colam h3{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+}
+.banner_form_colam input{
+    margin-bottom: 5px;
+    width: 245px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: 1px solid #00A0C1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+ 
+}
+.select_content{
+    width: 245px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: 1px solid #00A0C1;
+}
+.select_content option{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    background: none;
+}
+.form_button a{
+    width: 248px;
+    height: 58px;
+    background: #FFA62B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    border: 1px solid #FFA62B;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: all linear .3s;
+}
+.form_button a:hover{
+    background: transparent;
+    color: #111;
+}
+/* ------------------banner part end-------------------- */
+/* ====================course css part start=================== */
+#course{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FFFFFF;
+}
+.course_heading h2{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.course_heading p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    text-align: center;
+}
+.course_row{
+    display: flex;
+    justify-content: space-between;
+}
+.course_col{
+    width: 329px;
+    padding: 30px 40px 40px 40px;
+
+    background: #A9D6FF;
+    display: flex;
+    justify-content: space-between; 
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 80px;
+    
+}
+.course_icon{
+    width: 72px;
+    height: 72px;
+    border-radius: 200px;
+    background: #fff;
+    align-items: center;
+    line-height: 72px;
+    margin: 0% auto;
+    color: #FFA62B;
+}
+.course_icon_text h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    text-align: center;
+    margin: 0% auto;
+    line-height: 72px;
+}
+.course_colam{
+    position: relative;
+    bottom: 12px;
+    width: 329px;
+    padding: 30px 45px;
+    background: #FFFFFF;
+    border: 1px solid #A9D6FF;
+    border-radius: 10px;
+}
+.course_colam_heading p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #737373;
+}
+.course_colam_heading .more{
+    color: #FFA62B;
+}
+/* ------------------course part end-------------------- */
+/* ====================video part start=================== */
+#service{
+    height: 407px;
+    padding-top: 80px;
+    background: #fff;
+}
+
+.service_heading h2{
+    width: 480px;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    text-align: center;
+    margin: 0% auto;
+    margin-bottom: 10px;
+}
+.service_heading p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    text-align: center;
+    margin: 0% auto;
+}
+#video_part{
+    width: 100%;
+    height: 427px;
+    background: #16697A;
+}
+.service_colam{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 160px;
+}
+.service_colam video{
+    margin-top: 50px;
+}
+
+/* ------------------video part end-------------------- */
+/* ====================clients part start=================== */
+#clients{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F3F3F3;
+}
+.clients_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.clients_col{
+    width: 327px;
+    padding: 30px 48px 30px 35px;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+.clients_col .clients_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0% auto;
+}
+.clients_text h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #FFA62B;
+    text-align: center;
+    margin-top: 10px;
+}
+.clients_text h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+    text-align: center;
+    margin-top: 5px;
+}
+.clients_text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #737373;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.clients_icon{
+    text-align: center;
+}
+.clients_icon a{
+    font-size: 16px;
+    color: yellow;
+}
+/* ------------------clients part end-------------------- */
+/* ====================team part start=================== */
+#team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FFFFFF;
+}
+.team_row{
+    display: flex;
+    justify-content: space-between;
+}
+.team_col{
+    width: 328px;
+    margin-top: 80px;
+}
+.team_text h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    text-align: center;
+}
+.team_text p{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #737373;
+    text-align: center;
+}
+.team_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.team_icon a{
+    font-size: 20px;
+    color: #00A0C1;
+
+}
+/* ------------------team part end-------------------- */
+/* ====================Contact part start=================== */
+#contact{
+    background: url('../image/background-.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.contact_head h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+}
+.contact_head h3{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+}
+.contact_info{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.contact_name{
+    width: 290px;
+    padding: 10px 15px;
+    border: 1px solid #737373;
+    border-radius: 15px;
+}
+.contact_name input{
+    border: none;
+    width: 100%;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+}
+.email_name{
+    width: 290px;
+    padding: 10px 15px;
+    border: 1px solid #737373;
+    border-radius: 15px;
+    
+}
+.email_name input{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+}
+.contact_select_bar{
+    display: flex;
+    gap: 20px;
+}
+.select_col{
+    width: 290px;
+    padding: 10px 15px;
+    border: 1px solid #737373;
+    background: transparent;
+    border-radius: 15px;
+}
+.select_one{
+    border: none;
+    width: 100%;
+    background: transparent;
+    font-size: 20px;
+    color: #737373;
+}
+
+.message textarea{
+    width: 598px;
+    height: 140px;
+    border: 1px solid #737373;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+    resize: none;
+}
+.message textarea::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #737373;
+}
+.contact_button a{
+    width: 244px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    background: #FFA62B;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 1px solid #FFA62B;
+    transition: all linear .3s;
+}
+.contact_button a:hover{
+    background: transparent;
+    color: #111;
+}
+/* ------------------Contact part end-------------------- */
+/* ====================Agency part start=================== */
+#agency{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #FAFAFA;
+}
+.agency_head{
+    display: flex;
+    justify-content: space-between;
+}
+.agency_heading h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #111;
+    margin-bottom: 10px;
+}
+.agency_heading p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #111;
+}
+.agency_button a{
+    width: 163px;
+    height: 58px;
+    background: #FFA62B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Croissant One', cursive;
+    color: #fff;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 10px;
+    border: 1px solid #FFA62B;
+    transition: all linear .3s;
+}
+.agency_button a:hover{
+    background: transparent;
+    color: #111;
+}
+/* ------------------Agency part end-------------------- */
+/* ====================Company css part start=================== */
+#company{
+    padding-top: 53px;
+    padding-bottom: 53px;
+    background: #1a2246;
+}
+.company_head_icon{
+    display: flex;
+    justify-content: space-between;
+}
+.company_heading h2{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #fff;
+    margin-bottom: 53px;
+}
+.company_icon{
+    display: flex;
+    gap: 20px;
+}
+.company_icon .icon_fb{
+    font-size: 30px;
+    color: #335BF5;
+}
+.company_icon .icon_insta{
+    font-size: 30px;
+    color: #E51F5A;
+}
+.company_icon .icon_twr{
+    font-size: 30px;
+    color: #21A6DF;
+}
+.company_icon .icon_ytb{
+    font-size: 30px;
+    color: #c90640;
+}
+hr{
+    width: 100%;
+    height: 1px;
+   border: 1px solid  #364067;
+   margin-bottom: 70px;
+}
+.company_row{
+    display: flex;
+    justify-content: space-between;
+}
+.company_col h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Croissant One', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.company_col p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    transition: all linear .3s;
+}
+.company_col p:hover{
+    color: #5649c9;
+}
+.subscribe{
+    
+}
+.form_box{
+    width: 321px;
+    padding: 15px;
+    border: 1px solid #1900fc;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_box input{
+    width: 70%;
+    font-size: 20px;
+    color: #111;
+    background: transparent;
+    border: none;
+}
+.form_box button{
+    width: 30%;
+    font-size: 18px;
+    color: #111;
+    background: #FFA62B;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+/* ------------------Company css part end-------------------- */
+/* ====================footer part start=================== */
+#footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #16697A;
+}
+.footer_heading h2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* ------------------footer part end-------------------- */
+/* ====================common css part start=================== */
+/* ------------------common css part end-------------------- */
+/* ====================common css part start=================== */
+/* ------------------common css part end-------------------- */
+
